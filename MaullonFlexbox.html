@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Maullon</title>
+</head>
+
+<style>
+
+    /*Gloabal Styles*/
+
+    header{
+        font-family: Arial, sans-serif;
+        background-color: gray;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    header, nav, section, article, aside{
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+
+    /*Flexbody Layout*/
+
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .flex-item{
+        flex: 1 0 calc(25% - 20px);
+    }
+
+    /*Individual Styles*/
+    article{
+        background-color: lightblue;
+    }
+
+    footer{
+        background-color: gray;
+        text-align: center;
+        padding: 2px;
+    }
+
+    nav {
+        background-color: lightblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    nav h2 {
+        margin: 0 0 10px 0;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+</style>
+
+<body>
+    <header>
+        <h1>Jin Website</h1>
+        <p>Welcome to our sample website</p>
+    </header>
+
+    <nav>
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="flex-container"> 
+    
+
+    <section class="flex-item">
+        <h2>About US</h2>
+        <p>Hi, I'm [Your Name], a passionate web developer based in [Your City/Region, Philippines]. With [Number] years of experience, I specialize in creating clean, efficient, and user-friendly websites and web applications. I'm driven by a desire to turn ideas into functional realities and am committed to delivering high-quality solutions that meet your specific needs. My expertise includes [list 2-3 key skills, e.g., front-end development with React, back-end development with Python, database management].</p>
+    </section>
+
+    <article class="flex-item">
+        <h2>Latest Tips</h2>
+        <p>[Date] Our New [Product/Service Name] Has Launched! We're excited to announce the official launch of our [Product/Service Name]! [Briefly describe what it is and its key benefits, e.g., Our new eco-friendly packaging is now available for all orders; Our updated website features a faster and more intuitive user experience; Our new online course on digital marketing is now open for enrollment]. Learn more here: [Link to the relevant page].</p>
+    </article>
+
+    <aside class="flex-item">
+        <h2>Related Links</h2>
+        <u>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </u>
+    </aside>
+    </div>
+
+
+    
+    <footer>
+        <p>&copy;2024 Sample Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
